@@ -1,0 +1,8 @@
+<h1>WebSocket Chat</h1>
+
+<form method="POST" action="{% url 'chat_view' %}">
+    {% csrf_token %}
+    <input name="sender" type="text" placeholder="Your name..." />
+    <input name="message" type="text" placeholder="Type a message..." />
+    <button type="submit">Send</button>
+</form>
